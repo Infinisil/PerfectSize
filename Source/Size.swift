@@ -13,6 +13,6 @@ public protocol Size : CustomStringConvertible {
 
 extension Size {
 	public var description: String {
-		return "[size: \(Self.size)]"
+		return "[size: \(sizeof(Self))]"
 	}
 }

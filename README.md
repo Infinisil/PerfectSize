@@ -25,7 +25,7 @@ There is a single initializer for every such type which takes a byte value (`UIn
 
 ```swift
 let powerlevel = OVER9000() // All zeroes
-let life = MeaningOfLife(byte: 0x00101010)  // Every byte is set to the answer
+let life = MeaningOfLife(byte: 0b00101010)  // Every byte is set to the answer
 ```
 ## What can I use this for?
 
