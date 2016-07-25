@@ -10,15 +10,11 @@
 public protocol DecimalSize : Size {}
 
 public struct D : DecimalSize {
-	public static let size : Int = 0
-	
 	/// Initialize this struct with every byte set to the given one
 	public init(byte: UInt8 = 0) {}
 }
 
 public struct DecimalPlus1<S : DecimalSize> : DecimalSize {
-	public static var size : Int { return S.size + 1 }
-	
 	let a : S
 	let x : UInt8
 	
@@ -30,8 +26,6 @@ public struct DecimalPlus1<S : DecimalSize> : DecimalSize {
 }
 
 public struct Times10<S : Size> : DecimalSize {
-	public static var size : Int { return S.size * 10 }
-	
 	let a0, a1, a2, a3, a4, a5, a6, a7, a8, a9 : S
 	
 	public init(byte: UInt8 = 0) {

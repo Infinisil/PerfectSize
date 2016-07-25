@@ -9,15 +9,11 @@
 public protocol BinarySize : Size {}
 
 public struct B : BinarySize {
-	public static let size : Int = 0
-	
 	/// Initialize this struct with every byte set to the given one
 	public init(byte: UInt8 = 0) {}
 }
 
 public struct Times2<S : BinarySize> : BinarySize {
-	public static var size : Int { return S.size * 2 }
-	
 	let a, b : S
 	
 	/// Initialize this struct with every byte set to the given one
@@ -27,9 +23,7 @@ public struct Times2<S : BinarySize> : BinarySize {
 	}
 }
 
-public struct BinaryPlus1<S : BinarySize> : BinarySize {
-	public static var size : Int { return S.size + 1 }
-	
+public struct BinaryPlus1<S : BinarySize> : BinarySize {	
 	let a : S
 	let x : UInt8
 	

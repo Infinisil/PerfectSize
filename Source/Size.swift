@@ -7,8 +7,6 @@
 //
 
 public protocol Size : CustomStringConvertible {
-	static var size : Int { get }
-
 	/// Initialize this struct with every byte set to the given one
 	init(byte: UInt8)
 }

@@ -27,13 +27,13 @@
 		B61BCA691D4661F5003D8144 /* PerfectSize.h in Headers */ = {isa = PBXBuildFile; fileRef = B61BCA681D4661F5003D8144 /* PerfectSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B61BCA701D4661F5003D8144 /* PerfectSize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BCA651D4661F5003D8144 /* PerfectSize.framework */; };
 		B61BCA751D4661F5003D8144 /* PerfectSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA741D4661F5003D8144 /* PerfectSizeTests.swift */; };
-		B61BCA7E1D466206003D8144 /* PerfectSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* PerfectSize.swift */; };
+		B61BCA7E1D466206003D8144 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* Size.swift */; };
 		B61BCAC51D466445003D8144 /* PerfectSize.h in Headers */ = {isa = PBXBuildFile; fileRef = B61BCA681D4661F5003D8144 /* PerfectSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B61BCAC61D466445003D8144 /* PerfectSize.h in Headers */ = {isa = PBXBuildFile; fileRef = B61BCA681D4661F5003D8144 /* PerfectSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B61BCAC71D466445003D8144 /* PerfectSize.h in Headers */ = {isa = PBXBuildFile; fileRef = B61BCA681D4661F5003D8144 /* PerfectSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B61BCAC81D466450003D8144 /* PerfectSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* PerfectSize.swift */; };
-		B61BCAC91D466450003D8144 /* PerfectSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* PerfectSize.swift */; };
-		B61BCACA1D466451003D8144 /* PerfectSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* PerfectSize.swift */; };
+		B61BCAC81D466450003D8144 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* Size.swift */; };
+		B61BCAC91D466450003D8144 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* Size.swift */; };
+		B61BCACA1D466451003D8144 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BCA7D1D466206003D8144 /* Size.swift */; };
 		B6F639931D46835900373D5F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F639921D46835900373D5F /* main.swift */; };
 		B6F639A41D46983700373D5F /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F639A31D46983700373D5F /* Binary.swift */; };
 		B6F639A51D46983700373D5F /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F639A31D46983700373D5F /* Binary.swift */; };
@@ -102,7 +102,7 @@
 		B61BCA6F1D4661F5003D8144 /* PerfectSizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfectSizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61BCA741D4661F5003D8144 /* PerfectSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSizeTests.swift; sourceTree = "<group>"; };
 		B61BCA761D4661F5003D8144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B61BCA7D1D466206003D8144 /* PerfectSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PerfectSize.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B61BCA7D1D466206003D8144 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Size.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B61BCA851D4663CA003D8144 /* PerfectSize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerfectSize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61BCA891D4663CA003D8144 /* Info iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info iOS.plist"; path = "Supporting Files/Info iOS.plist"; sourceTree = SOURCE_ROOT; };
 		B61BCAA11D4663DD003D8144 /* PerfectSize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerfectSize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +187,7 @@
 		B61BCA671D4661F5003D8144 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B61BCA7D1D466206003D8144 /* PerfectSize.swift */,
+				B61BCA7D1D466206003D8144 /* Size.swift */,
 				B6F639A81D46988600373D5F /* Decimal.swift */,
 				B6F639A31D46983700373D5F /* Binary.swift */,
 				B61BCACB1D46647F003D8144 /* Supporting Files */,
@@ -473,7 +473,7 @@
 			files = (
 				B6F639A91D46988600373D5F /* Decimal.swift in Sources */,
 				B6F639A41D46983700373D5F /* Binary.swift in Sources */,
-				B61BCA7E1D466206003D8144 /* PerfectSize.swift in Sources */,
+				B61BCA7E1D466206003D8144 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +491,7 @@
 			files = (
 				B6F639AA1D46988600373D5F /* Decimal.swift in Sources */,
 				B6F639A51D46983700373D5F /* Binary.swift in Sources */,
-				B61BCAC81D466450003D8144 /* PerfectSize.swift in Sources */,
+				B61BCAC81D466450003D8144 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +501,7 @@
 			files = (
 				B6F639AC1D46988600373D5F /* Decimal.swift in Sources */,
 				B6F639A71D46983700373D5F /* Binary.swift in Sources */,
-				B61BCACA1D466451003D8144 /* PerfectSize.swift in Sources */,
+				B61BCACA1D466451003D8144 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +511,7 @@
 			files = (
 				B6F639AB1D46988600373D5F /* Decimal.swift in Sources */,
 				B6F639A61D46983700373D5F /* Binary.swift in Sources */,
-				B61BCAC91D466450003D8144 /* PerfectSize.swift in Sources */,
+				B61BCAC91D466450003D8144 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,6 +1269,7 @@
 				B6F639961D46835900373D5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6F639981D46969900373D5F /* Build configuration list for PBXAggregateTarget "PerfectSize All" */ = {
 			isa = XCConfigurationList;
@@ -1277,6 +1278,7 @@
 				B6F6399A1D46969900373D5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
