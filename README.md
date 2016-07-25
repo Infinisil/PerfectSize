@@ -38,7 +38,7 @@ Here is the complete list of potential usages for this:
 
 ### Manual
 
-Copy every file from `/Sources` into your project.
+Copy every file from `/Source` into your project.
 
 ### Carthage
 
