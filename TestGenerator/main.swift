@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 enum Base : Int {
 	case Binary = 2
 	case Decimal = 10
