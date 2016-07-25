@@ -6,8 +6,6 @@
 //  
 //
 
-import class Foundation.NSData
-
 public protocol Size : CustomStringConvertible {
 	static var size : Int { get }
 

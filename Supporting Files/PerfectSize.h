@@ -6,7 +6,7 @@
 //
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for PerfectSize.
 FOUNDATION_EXPORT double PerfectSizeVersionNumber;
@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double PerfectSizeVersionNumber;
 //! Project version string for PerfectSize.
 FOUNDATION_EXPORT const unsigned char PerfectSizeVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <PerfectSize/PublicHeader.h>
 
 
