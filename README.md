@@ -1,5 +1,5 @@
 # PerfectSize
-Ever wanted to have a type with an exact size? Me neither! But now you can!
+Ever wanted to have a type with a certain size? Me neither! But now you can!
 
 ## Usage
 
