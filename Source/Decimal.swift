@@ -23,20 +23,8 @@ public struct D : DecimalSize {
 	public init(byte: UInt8 = 0) {}
 }
 
-/// A struct with a size of the base struct plus one byte.
-public struct DecimalPlus1<S : DecimalSize> : DecimalSize {
-	let a : S
-	let x : UInt8
-	
-	/// Initialize this struct with every byte set to the given one
-	public init(byte: UInt8 = 0) {
-		a = S(byte: byte)
-		x = byte
-	}
-}
-
 /// A struct with a size of the base struct times ten.
-public struct Times10<S : Size> : DecimalSize {
+public struct Times10<S : DecimalSize> : DecimalSize {
 	let a0, a1, a2, a3, a4, a5, a6, a7, a8, a9 : S
 	
 	/// Initialize this struct with every byte set to the given one
@@ -51,6 +39,18 @@ public struct Times10<S : Size> : DecimalSize {
 		a7 = a0
 		a8 = a0
 		a9 = a0
+	}
+}
+
+/// A struct with a size of the base struct plus one byte.
+public struct DecimalPlus1<S : DecimalSize> : DecimalSize {
+	let a : S
+	let x : UInt8
+	
+	/// Initialize this struct with every byte set to the given one
+	public init(byte: UInt8 = 0) {
+		a = S(byte: byte)
+		x = byte
 	}
 }
 
