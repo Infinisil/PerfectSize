@@ -1,7 +1,7 @@
 import PerfectSize
 
 //:# PerfectSize
-//: Ever wanted to have a type with an exact size? Me neither! But now you can!
+//: Ever wanted to have a type with a certain size? Me neither! But now you can!
 //:
 //:## Usage
 //: Say you want a type that has a size of 9001 bytes, which is clearly over 9000, so it'd take a long time to figure out how to get *exactly* 9001. With this framework it's as simple as:
