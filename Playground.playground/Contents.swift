@@ -11,7 +11,7 @@ typealias OVER9000 = NineThousand.Add1
 
 //:This type has now really a size of over 9000:
 
-sizeof(OVER9000.self)
+MemoryLayout<OVER9000>.size
 
 //:You can also use binary, which doesn't need the ugly characters inbetween the numbers:
 
@@ -28,7 +28,8 @@ let molPlusFive = (MeaningOfLife.self + B.I.O.I.self).init() // 42 + 5
 
 //: There is also a `+` operator defined to concatenate instantiated structs to produce an instance of a struct of the combined size
 
-let combined = B.I.I.I() + life + B.I() // 7 + 42 + 1
+let combined = B.I.I.I() + life // 7 + 42
+let c = combined + B.I() // 49 + 1
 
 //:## What can I use this for?
 //:Potential usages include:

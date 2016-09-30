@@ -30,6 +30,6 @@ extension Size {
 	public typealias Add1 = Plus1<Self>
 	
 	public var description: String {
-		return "[size: \(sizeof(Self))]"
+		return "[size: \(MemoryLayout<Self>.size)]"
 	}
 }
