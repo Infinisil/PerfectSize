@@ -52,7 +52,7 @@ Potential usages include:
 
 ### Manual
 
-Copy every file from `/Source` into your project.
+Download the [latest release](https://github.com/Infinisil/PerfectSize/releases/latest) and copy every file from `/Source` into your project.
 
 ### Carthage
 
